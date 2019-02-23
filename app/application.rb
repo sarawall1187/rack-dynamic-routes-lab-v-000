@@ -22,7 +22,6 @@ class Application
        "#{item_checked.price}"
      else
        "Item not found."
-     end
     end
   end
   
