@@ -16,13 +16,13 @@ class Application
      resp.finish
   end
   
-  def item_check(item_checked, response)
+  def item_check(item_checked, resp)
    item = @@items.find {|item| item.name == item_checked}
      if item
        "#{item.price}"
      else
-      "Item not found."
-      
+      rep.write "Item not found."
+      resp.status = 400
     end
   end
   
