@@ -18,7 +18,7 @@ class Application
   def item_check
     @@items.each do |item|
       if @@items.include?(item)
-      return "#{item.name}\n#{item.price}"
+      return "#{item.price}"
     else
       return "Item not found."
      end
