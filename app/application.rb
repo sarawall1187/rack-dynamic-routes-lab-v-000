@@ -21,7 +21,7 @@ class Application
        binding.pry
        
      if item = @@items.find {|item| item.name == item_checked}
-       "#{item_checked.price}"
+       "#{item.price}"
      else
        "Item not found."
     end
