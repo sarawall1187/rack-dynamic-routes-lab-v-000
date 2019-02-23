@@ -8,7 +8,7 @@ class Application
     req = Rack::Request.new(env)
      item_checked = req.path.split("/").last
    if req.path== "/items/#{item_checked}"
-       resp.write item_check(item_checked)
+       resp.write item_check(item_checked, resp)
     else
       resp.write "Route not found"
       resp.status = 404
