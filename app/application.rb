@@ -18,8 +18,10 @@ class Application
   def item_check
     @@items.each do |item|
       if @@items.include?(item)
-      resp.write "#{item.name}\n#{item.price}"
-    end
+      return "#{item.name}\n#{item.price}"
+    else
+      return "Item not found."
+     end
     end
   end
 end
