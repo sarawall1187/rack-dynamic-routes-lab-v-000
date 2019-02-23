@@ -9,7 +9,7 @@ class Application
      binding.pry
      item_checked = req.path.split("/").last
       if req.path=="/items"
-       resp.write item_check
+       resp.write item_check(item_checked)
     else
       resp.write "Route not found"
       resp.status = 404
@@ -17,7 +17,7 @@ class Application
     resp.finish
   end
   
-  def item_check
+  def item_check(item_checked)
     @@items.each do |item|
       if @@items.include?(item)
       return "#{item.price}"
