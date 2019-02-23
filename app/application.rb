@@ -13,6 +13,7 @@ class Application
   end
   
   def item_check
-    
+    @@items.each do |item|
+      
   end
 end
