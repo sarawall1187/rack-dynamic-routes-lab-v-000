@@ -18,8 +18,7 @@ class Application
   end
   
   def item_check(item_checked)
-       binding.pry
-       item = @@items.find {|item| item.name == item_checked}
+   item = @@items.find {|item| item.name == item_checked}
      if item
        "#{item.price}"
      else
