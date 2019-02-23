@@ -7,6 +7,7 @@ class Application
     resp = Rack::Response.new 
     req = Rack::Request.new(env)
      binding.pry
+     item_checked = req.path.split("/").last
       if req.path=="/items"
        resp.write item_check
     else
