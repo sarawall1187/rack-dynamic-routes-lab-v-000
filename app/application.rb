@@ -21,7 +21,7 @@ class Application
      if item
        "#{item.price}"
      else
-      rep.write "Item not found."
+      resp.write "Item not found."
       resp.status = 400
     end
   end
