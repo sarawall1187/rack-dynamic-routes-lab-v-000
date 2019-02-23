@@ -19,9 +19,9 @@ class Application
   
   def item_check(item_checked)
     @@items.each do |item|
-      if @@items.include?(item)
+     if @@items.include?(item)
       return "#{item.price}"
-    else
+     else
       return "Item not found."
      end
     end
