@@ -19,7 +19,7 @@ class Application
   
   def item_check(item_checked)
      if @@items.include?(item_checked)
-       "#{item.price}"
+       "#{item_checked.price}"
      else
        "Item not found."
      end
