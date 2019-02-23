@@ -4,8 +4,9 @@ class Application
   def call 
     resp = Rack::Response.new 
     req = Rack::Request.new(env)
+    binding.pry
       if req.path=="/items"
-        binding.pry
+        
       resp.write item_check
     else
       resp.write "Route not found"
