@@ -19,7 +19,7 @@ class Application
   
   def item_check(item_checked)
        binding.pry
-     if @@items.find(item_checked)
+     if @@items.find {|item| item.name == item_checked}
        "#{item_checked.price}"
      else
        "Item not found."
