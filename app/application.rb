@@ -17,5 +17,6 @@ class Application
       if @@items.include?(item)
       resp.write "#{item.name}\n#{item.price}"
     end
+    end
   end
 end
